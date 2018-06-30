@@ -24,3 +24,8 @@ def first_wa(array)
   end
   has_wa
 end
+
+def remove_non_strings(array)
+  all_strings = []
+  array.each do |element|
+    all_strings << if element.is_a(String)
