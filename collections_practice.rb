@@ -13,3 +13,14 @@ def contain_a(array)
   end
   has_a
 end
+
+def first_wa(array)
+  has_wa = nil
+  array.each do |element|
+    if element.match(/wa/)
+      has_wa = element
+      break
+    end
+  end
+  has_wa
+end
